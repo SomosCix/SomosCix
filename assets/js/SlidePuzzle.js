@@ -99,6 +99,6 @@ function isFinished(boardArr) {
       return false;
     }
   }
-  alert("Game over");
+  // alert("Game over");
   return true;
 }
