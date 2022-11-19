@@ -1,0 +1,144 @@
+.gameContainer {
+  /* margin: 50px; */
+  position: relative;
+  height: 36rem;
+  width: 36rem;
+}
+.square {
+  height: 9rem;
+  width: 9rem;
+  color: white;
+  border: 1px solid white;
+  background-size: cover;
+  background-position: center;
+  /* background: #333; */
+  position: absolute;
+  transition: left 0.5s, top 0.5s;
+  box-sizing: border-box;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  cursor: pointer;
+}
+.empty {
+  background: white;
+  z-index: 1;
+}
+/* Juegos 1 y 2 */
+/* Fila1 1 */
+[data-pos="0"] {
+  left: 0;
+  top: 0;
+}
+[data-pos="1"] {
+  left: 9rem;
+  top: 0;
+}
+[data-pos="2"] {
+  left: 18rem;
+  top: 0;
+}
+[data-pos="3"] {
+  left: 27rem;
+  top: 0;
+}
+/* Fila 2 */
+[data-pos="4"] {
+  left: 0;
+  top: 9rem;
+}
+[data-pos="5"] {
+  left: 9rem;
+  top: 9rem;
+}
+[data-pos="6"] {
+  left: 18rem;
+  top: 9rem;
+}
+[data-pos="7"] {
+  left: 27rem;
+  top: 9rem;
+}
+/* Fila 3 */
+[data-pos="8"] {
+  left: 0;
+  top: 18rem;
+}
+[data-pos="9"] {
+  left: 9rem;
+  top: 18rem;
+}
+[data-pos="10"] {
+  left: 18rem;
+  top: 18rem;
+}
+[data-pos="11"] {
+  left: 27rem;
+  top: 18rem;
+}
+/* Fila 4 */
+[data-pos="12"] {
+  left: 0;
+  top: 27rem;
+}
+[data-pos="13"] {
+  left: 9rem;
+  top: 27rem;
+}
+[data-pos="14"] {
+  left: 18rem;
+  top: 27rem;
+}
+[data-pos="15"] {
+  left: 27rem;
+  top: 27rem;
+}
+
+/* Juego 3 */
+/* Fila1 1 */
+[data-id="0"] {
+  left: 0;
+  top: 0;
+}
+
+[data-id="1"] {
+  left: 9rem;
+  top: 0;
+}
+
+[data-id="2"] {
+  left: 18rem;
+  top: 0;
+}
+/* Fila1 2 */
+[data-id="3"] {
+  left: 0;
+  top: 9rem;
+}
+
+[data-id="4"] {
+  left: 9rem;
+  top: 9rem;
+}
+
+[data-id="5"] {
+  left: 18rem;
+  top: 9rem;
+}
+/* Fila1 3 */
+[data-id="6"] {
+  left: 0;
+  top: 18rem;
+}
+
+[data-id="7"] {
+  left: 9rem;
+  top: 18rem;
+}
+
+[data-id="8"] {
+  left: 18rem;
+  top: 18rem;
+}
