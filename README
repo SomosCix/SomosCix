@@ -1,0 +1,10 @@
+##comando para despliegue
+ng deploy --base-href=/chiclayoProject/ 
+
+
+
+Paleta de colores:
+Rojo: #C42340
+Amarillo: #F4C63C
+Morado oscuro: #25192E
+Blanco: #FFFFFE
