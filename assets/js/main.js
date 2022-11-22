@@ -48,7 +48,12 @@ $(function () {
 
       if (sectionOffset <= scrollbarLocation) {
         const text = $(this).context.innerText;
-        if (text == "CHICLAYO" || text == "USS" || text == "FORO") {
+        if (
+          text == "CHICLAYO" ||
+          text == "MERCHANDISING" ||
+          text == "FORO" ||
+          text == "CALENDARIO"
+        ) {
           $(this).parent().addClass("active2");
           $(this).parent().siblings().removeClass("active");
           $(this).parent().siblings().removeClass("active2");
@@ -68,17 +73,26 @@ $(function () {
     // other options
   });
 
+  // $(".abrirTest").magnificPopup({
+  //   src: $('<div class="white-popup">Dynamically created element</div>'), // Dynamically created element
+  //   type: "inline",
+  // });
+
   //===== Slick
 
   $(".testimonial-active").slick({
     infinite: true,
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     speed: 800,
-    arrows: false,
+    arrows: true,
     dots: true,
     autoplay: true,
     autoplaySpeed: 5000,
+    prevArrow:
+      "<i class='lni lni-arrow-left-circle' style='margin-bottom: auto; margin-top: auto; cursor: pointer; font-size: 2rem;'></i>",
+    nextArrow:
+      "<i class='lni lni-arrow-right-circle' style='margin-bottom: auto; margin-top: auto; cursor: pointer; font-size: 2rem;'></i>",
     responsive: [
       {
         breakpoint: 1024,
