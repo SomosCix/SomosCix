@@ -50,9 +50,9 @@ $(function () {
         const text = $(this).context.innerText;
         if (
           text == "CHICLAYO" ||
-          text == "MERCHANDISING" ||
-          text == "FORO" ||
-          text == "CALENDARIO"
+          text == "GALERÍA" ||
+          text == "VIDEOS" ||
+          text == "JUEGOS"
         ) {
           $(this).parent().addClass("active2");
           $(this).parent().siblings().removeClass("active");
@@ -79,6 +79,38 @@ $(function () {
   // });
 
   //===== Slick
+
+  $(".people-active").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 800,
+    arrows: false,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+        },
+      },
+    ],
+  });
 
   $(".testimonial-active").slick({
     infinite: true,
