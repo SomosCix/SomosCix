@@ -1400,6 +1400,7 @@ p {
   --text-opacity: 1;
   color: #1a202c;
   color: rgba(26, 32, 44, var(--text-opacity));
+  width: 100%;
 }
 
 .services-title {
@@ -1593,6 +1594,12 @@ p {
 .video-container {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.myvideo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonial-image {
