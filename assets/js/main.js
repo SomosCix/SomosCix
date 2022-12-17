@@ -49,7 +49,7 @@ $(function () {
       if (sectionOffset <= scrollbarLocation) {
         const text = $(this).context.innerText;
         if (
-          text == "CHICLAYO" ||
+          text == "REPORTAJE" ||
           text == "GALERÍA" ||
           text == "VIDEOS" ||
           text == "JUEGOS"
